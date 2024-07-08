@@ -30,6 +30,6 @@ inputForm.addEventListener("submit", function(e) {
     emailjs.send(serviceID, templateId, inputData).then(() => {
         inputName.value = '';
         inputEmail.value = '';
-        console.log("Success");
+        alert("İlklərin siyahısına xoş gəldiniz!");
     }, (error) => console.log(error));
 });
